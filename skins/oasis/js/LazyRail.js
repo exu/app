@@ -43,9 +43,7 @@ $(function() {
 					Wikia.initRailTracking();
 				}
 
-				if ( !window.wgUserName ) {
-					window.AIC2.init();
-				}
+				window.AIC2.init();
 
 				if (window.wgEnableLightboxExt) {
 					LightboxLoader.init();
