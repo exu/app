@@ -10,14 +10,14 @@ var AIC2 = {
 	visible         : false
 };
 
-AIC.enabled = window.top === window.self
+AIC2.enabled = window.top === window.self
 	&& window.wgEnableAdsInContent
 	&& window.wgShowAds
 	&& !window.wgIsMainpage
 	&& (window.wgIsContentNamespace || window.wikiaPageType === 'search');
 
 AIC2.init = function() {
-	if (!AIC.enabled || AIC2.called) {
+	if (!AIC2.enabled || AIC2.called) {
 		return;
 	}
 
